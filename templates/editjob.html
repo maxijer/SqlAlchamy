@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate style="width: 900px; display: block; margin: auto">
+    {{ form.hidden_tag() }}
+    <h1 class="one" style="margin: auto">Editing a Job</h1>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Job Title</h4>
+    {{ form.job_title(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Team Leader id</h4>
+    {{ form.team_leader(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Work Size</h4>
+    {{ form.work_size(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Collaborators</h4>
+    {{ form.collaborators(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h6>{{ form.remember_me() }} {{ form.remember_me.label }}</h6>
+    <p>{{ form.submit(type="submit", class="btn btn-primary", style="width: 75px;") }}</p>
+</form>
+{% endblock %}

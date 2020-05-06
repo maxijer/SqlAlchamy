@@ -1,0 +1,135 @@
+.about {
+    display: inline-block;
+}
+
+.fir {
+    display: inline-block;
+}
+
+.about img {
+    display: block;
+}
+
+.div1 {
+    display: inline-block;
+}
+
+.mast {
+    margin: auto;
+    background-color: #DDDDDD;
+    padding-right: 40px;
+    width: 1300px;
+}
+
+.pad {
+    margin: auto;
+    background-color: #EEEEFF;
+    padding-right: 40px;
+    width: 1300px;
+}
+
+.regis {
+    width: 500px;
+    height: 900px;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    padding-left: 80px;
+    border-radius: 20px;
+}
+
+.three {
+    margin-top: 5%;
+    height: 310px;
+}
+
+.two {
+    margin-top: 5%;
+    height: 390px;
+    border-radius: 20px;
+}
+
+.knopki {
+    display: inline-block;
+}
+
+.mastera {
+    display: inline-block;
+    width: 100px;
+}
+
+.se {
+    width: 400px;
+}
+
+.topovie {
+    border-radius: 20px;
+}
+
+
+.news {
+    border-radius: 20px;
+    width: 1000px;
+}
+
+.bozhestw {
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    padding-left: 40px;
+    border-radius: 20px;
+}
+
+
+.loginer {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    padding-left: 40px;
+    border-radius: 20px;
+}
+
+.log {
+    width: 450px;
+    height: 550px;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    padding-left: 80px;
+    border-radius: 20px;
+}
+
+.bozhestw {
+    border-radius: 20px;
+}
+
+
+.govno {
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    margin-top: 5%;
+    padding-left: 100px;
+}
+
+.form-control {
+    width: 341px;
+    margin-right: 120px;
+}
+
+.for_vhod {
+    width: 400px;
+}
+
+.form-control {
+    width: 1000px;
+}
+
+.bod {
+    background-color: #F4F4F4;
+}

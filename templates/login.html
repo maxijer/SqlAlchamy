@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{chto}}">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>Пример формы</title>
+</head>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <title>Пример формы</title>
+</head>
+<body>
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate style="width: 900px; display: block; margin: auto">
+    {{ form.hidden_tag() }}
+    <h1 class="one" style="margin: auto">Register Form</h1>
+     <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Login/email</h4>
+    {{ form.email(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Password</h4>
+             {{ form.password(class="form-control", type="password") }}<br>
+    <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Repeat password</h4>
+    {{ form.Repeat_password(class="form-control", type="password") }}<br>
+    <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Surname</h4>
+    {{ form.surname(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Name</h4>
+    {{ form.name(class="form-control")}}<br>
+     <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Age</h4>
+    {{ form.age(class="form-control")}}<br>
+     <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Position</h4>
+    {{ form.position(class="form-control")}}<br>
+     <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Speciality</h4>
+    {{ form.speciality(class="form-control")}}<br>
+     <div style="height: 20px;"></div>
+      <h4 style="margin: auto">Address</h4>
+    {{ form.address(class="form-control")}}<br>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+
+
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<body class="bod">
+<div class="loginer">
+    <form method="post">
+        <div action="" method="post" novalidate style="width: 900px; display: block; margin: auto"
+             class="topovie">
+            <div class="three">
+                <div style="height: 15px;"></div>
+                <h2 style="margin: auto">Авторизация</h2>
+                <div style="height: 40px;"></div>
+                <h4>Email</h4>
+                <h4 class="one">
+                    {{form.email(class="form-control", style="width: 360px")}}</h4>
+                <div style="height: 30px;"></div>
+                <h4>Пароль</h4>
+                <div style="width: 10px;"></div>
+                {{form.password(class="form-control", style="width: 360px;")}}
+            </div>
+            <p class="se">{{ form.submit(type="submit", class="btn btn-primary", style="width: 360px;")
+                }}</p>
+            <p class="se">{{ form.regist(type="submit", class="btn btn-primary", style="width:
+                360px;")
+                }}</p>
+        </div>
+    </form>
+</div>
+</body>
+{% endblock %}
