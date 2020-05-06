@@ -142,23 +142,23 @@ def login():
     for job in session.query(Jobs).all():
         team_ledaer = job.team_leader
         rabota = job.job
-        work = job.work_size
+        duration = job.work_size
         colob = job.collaborators
         end = job.is_finished
         idishnik = job.id
         for user in session.query(User).all():
             if int(user.id) == int(team_ledaer):
                 z = user.name + " " + user.surname
-                break
-        vse.append(rabota)
-        vse.append(team_ledaer)
-        vse.append(work)
-        vse.append(colob)
-        vse.append(end)
-        vse.append(idishnik)
-        d = vse.copy()
-        new.append(d)
-        vse.clear()
+                vse.append(rabota)
+                vse.append(z)
+                vse.append(str(duration) + " hours")
+                vse.append(colob)
+                vse.append(job.hazard_category)
+                vse.append(end)
+                vse.append(idishnik)
+                d = vse.copy()
+                new.append(d)
+                vse.clear()
     return render_template('osn.html', param=new)
 
 
