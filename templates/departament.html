@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Пример формы</title>
+</head>
+<body class="bod">
+{% extends "two.html" %}
+
+{% block content %}
+{% for item in param %}
+<h1>Action #{{loop.index}}</h1>
+<div class="mast">
+    <div class="about">
+        <h4>Title of department</h4>
+    </div>
+    <div class="about" style="width: 140px;"></div>
+    <div class="about">
+        <h4>Chief</h4>
+    </div>
+    <div class="about" style="width: 80px;"></div>
+    <div class="about">
+        <h4>Members</h4>
+    </div>
+    <div class="about" style="width: 80px;"></div>
+    <div class="about">
+        <h4>Department Email</h4>
+    </div>
+    <div class="about" style="width: 80px;"></div>
+</div>
+<!--Добавление-->
+<div class="pad">
+    <div class="fir">
+        <h4>{{item[0]}}</h4>
+    </div>
+    <div class="fir" style="width: 60px;"></div>
+    <div class="fir">
+        <h4>{{item[1]}}</h4>
+    </div>
+    <div class="fir" style="width: 80px;"></div>
+    <div class="fir">
+        <h4>{{item[2]}}</h4>
+    </div>
+    <div class="about" style="width: 100px;"></div>
+    <div class="fir">
+        <h4>{{item[3]}}</h4>
+    </div>
+    <div style="display: block">
+        <a href="/edit_department/{{item[4]}}" class="btn btn-warning">edit department</a>
+        <a href="/delete_department/{{item[4]}}" class="btn btn-danger">delete department</a>
+    </div>
+</div>
+<div style="height: 100px;"></div>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

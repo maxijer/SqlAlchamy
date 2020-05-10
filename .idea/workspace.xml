@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc83fa4-87ba-4c6b-9d1d-92497d16a669" name="Default Changelist" comment="" />
+    <list default="true" id="9bc83fa4-87ba-4c6b-9d1d-92497d16a669" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mars_explorer.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/db/mars_explorer.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sec.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sec.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="departments" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SQL_Alchemy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -93,12 +98,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SqlAlchamy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SqlAlchamy/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/departments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -110,10 +115,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app (1)" />
+        <item itemvalue="Python.departments" />
         <item itemvalue="JavaScript Debug.osn.html" />
         <item itemvalue="JavaScript Debug.sec.html" />
         <item itemvalue="JavaScript Debug.addjob.html" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +165,9 @@
       <workItem from="1587755820109" duration="4986000" />
       <workItem from="1588777112453" duration="1789000" />
       <workItem from="1588779398077" duration="9617000" />
+      <workItem from="1588859169494" duration="1984000" />
+      <workItem from="1588942781151" duration="3647000" />
+      <workItem from="1589113582969" duration="5356000" />
     </task>
     <servers />
   </component>
@@ -167,50 +175,50 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="180" key="GridCell.Tab.0.bottom" timestamp="1588799901442">
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom" timestamp="1589128628760">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.bottom/0.40.1366.728@0.40.1366.728" timestamp="1588799901442" />
-    <state width="1323" height="180" key="GridCell.Tab.0.center" timestamp="1588799901442">
+    <state width="1323" height="180" key="GridCell.Tab.0.bottom/0.40.1366.728@0.40.1366.728" timestamp="1589128628760" />
+    <state width="1323" height="180" key="GridCell.Tab.0.center" timestamp="1589128628760">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.center/0.40.1366.728@0.40.1366.728" timestamp="1588799901442" />
-    <state width="1323" height="180" key="GridCell.Tab.0.left" timestamp="1588799901441">
+    <state width="1323" height="180" key="GridCell.Tab.0.center/0.40.1366.728@0.40.1366.728" timestamp="1589128628760" />
+    <state width="1323" height="180" key="GridCell.Tab.0.left" timestamp="1589128628759">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.left/0.40.1366.728@0.40.1366.728" timestamp="1588799901441" />
-    <state width="1323" height="180" key="GridCell.Tab.0.right" timestamp="1588799901442">
+    <state width="1323" height="180" key="GridCell.Tab.0.left/0.40.1366.728@0.40.1366.728" timestamp="1589128628759" />
+    <state width="1323" height="180" key="GridCell.Tab.0.right" timestamp="1589128628760">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.right/0.40.1366.728@0.40.1366.728" timestamp="1588799901442" />
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1588782334096">
+    <state width="1323" height="180" key="GridCell.Tab.0.right/0.40.1366.728@0.40.1366.728" timestamp="1589128628760" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1589124771668">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.40.1366.728@0.40.1366.728" timestamp="1588782334096" />
-    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1588782334096">
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.40.1366.728@0.40.1366.728" timestamp="1589124771668" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1589124771667">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.center/0.40.1366.728@0.40.1366.728" timestamp="1588782334096" />
-    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1588782334095">
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.40.1366.728@0.40.1366.728" timestamp="1589124771667" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1589124771667">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.left/0.40.1366.728@0.40.1366.728" timestamp="1588782334095" />
-    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1588782334096">
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.40.1366.728@0.40.1366.728" timestamp="1589124771667" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1589124771667">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.1.right/0.40.1366.728@0.40.1366.728" timestamp="1588782334096" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.40.1366.728@0.40.1366.728" timestamp="1589124771667" />
     <state x="184" y="47" key="SettingsEditor" timestamp="1584520395940">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="184" y="47" key="SettingsEditor/0.40.1366.728@0.40.1366.728" timestamp="1584520395940" />
-    <state x="92" y="132" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588794589437">
+    <state x="92" y="132" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589124608479">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state x="92" y="132" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.1366.728@0.40.1366.728" timestamp="1588794589437" />
-    <state x="379" y="229" key="com.intellij.ide.util.TipDialog" timestamp="1588779396698">
+    <state x="92" y="132" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.40.1366.728@0.40.1366.728" timestamp="1589124608479" />
+    <state x="379" y="229" key="com.intellij.ide.util.TipDialog" timestamp="1589113802254">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
-    <state x="379" y="229" key="com.intellij.ide.util.TipDialog/0.40.1366.728@0.40.1366.728" timestamp="1588779396698" />
+    <state x="379" y="229" key="com.intellij.ide.util.TipDialog/0.40.1366.728@0.40.1366.728" timestamp="1589113802254" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584684705591">
       <screen x="0" y="40" width="1366" height="728" />
     </state>
@@ -219,7 +227,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/max123$app.coverage" NAME="app Coverage Results" MODIFIED="1587573295017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/max123$pro.coverage" NAME="pro Coverage Results" MODIFIED="1587558775174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Zozh" />
-    <SUITE FILE_PATH="coverage/Testing$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1588799901424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Testing$departments.coverage" NAME="departments Coverage Results" MODIFIED="1588882331072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data" />
+    <SUITE FILE_PATH="coverage/Testing$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1589128628542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/max123$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1587760720955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate style="width: 900px; display: block; margin: auto">
+    {{ form.hidden_tag() }}
+    <h1 class="one" style="margin: auto">Adding a Department</h1>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Title of department</h4>
+    {{ form.title(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Chief</h4>
+    {{ form.chief(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Members</h4>
+    {{ form.members(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <h4 style="margin: auto">Department Email</h4>
+    {{ form.email(class="form-control") }}<br>
+    <div style="height: 20px;"></div>
+    <p>{{ form.submit(type="submit", class="btn btn-primary", style="width: 75px;") }}</p>
+</form>
+{% endblock %}

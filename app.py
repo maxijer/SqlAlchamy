@@ -7,6 +7,7 @@ from data.users import User
 from data import db_session
 from flask_login import LoginManager, login_user, UserMixin, login_required, current_user
 import hashlib
+from data.departments import Departments
 from data.jobs import Jobs
 
 app = Flask(__name__)
@@ -41,6 +42,14 @@ class LoginForm(FlaskForm, UserMixin):
     regist = SubmitField('Регистрация')
 
 
+class Department(FlaskForm, UserMixin):
+    title = StringField('Title of department', validators=[DataRequired()])
+    chief = StringField('Chief', validators=[DataRequired()])
+    members = StringField('Members', validators=[DataRequired()])
+    email = EmailField('Department Email')
+    submit = SubmitField('add')
+
+
 class JobForm(FlaskForm):
     job_title = StringField('Title job', validators=[DataRequired()])
     team_leader = StringField('team_leader', validators=[DataRequired()])
@@ -59,6 +68,26 @@ class Edit_Form(FlaskForm):
     submit = SubmitField('edit')
 
 
+class Edit_Department(FlaskForm):
+    title = StringField('Title of department', validators=[DataRequired()])
+    chief = StringField('Chief', validators=[DataRequired()])
+    members = StringField('Members', validators=[DataRequired()])
+    email = EmailField('Department Email')
+    submit = SubmitField('edit')
+
+
+@app.route('/delete_department/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete_department(id):
+    db_session.global_init("db/mars_explorer.sqlite")
+    session = db_session.create_session()
+    for depart in session.query(Departments).filter(Departments.id == id):
+        if current_user.surname + " " + current_user.name == depart.chief or current_user.id == 1:
+            session.delete(depart)
+            session.commit()
+    return redirect('/department')
+
+
 @app.route('/delete_job/<int:id>', methods=['GET', 'POST'])
 @login_required
 def delete_job(id):
@@ -69,6 +98,23 @@ def delete_job(id):
             session.delete(job)
             session.commit()
     return redirect('/')
+
+
+@app.route('/edit_department/<int:id>', methods=['GET', 'POST'])
+def edit_department(id):
+    form = Edit_Department()
+    if request.method == "POST":
+        if form.submit.data:
+            session = db_session.create_session()
+            for dep in session.query(Departments).filter(Departments.id == id):
+                if current_user.surname + " " + current_user.name == dep.chief or current_user.id == 1:
+                    dep.title = form.title.data
+                    dep.chief = form.chief.data
+                    dep.members = form.members.data
+                    dep.email = form.email.data
+                    session.commit()
+                    return redirect('/department')
+    return render_template('editdepartment.html', form=form)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -109,28 +155,25 @@ def addjob():
             session.add(job)
             session.commit()
             return redirect('/')
-    return render_template('/editjob.html', form=form)
+    return render_template('/addjob.html', form=form)
 
 
-@app.route('/editjob/<int:id>', methods=['GET', 'POST'])
-def editjob(id):
-    form = Edit_Form()
+@app.route('/adddepartment', methods=['GET', 'POST'])
+def adddepartment():
+    form = Department()
     if request.method == "POST":
         if form.submit.data:
+            db_session.global_init("db/mars_explorer.sqlite")
             session = db_session.create_session()
-            for job in session.query(Jobs).filter(Jobs.id == id):
-                if current_user.id == job.team_leader or current_user.id == 1:
-                    job.team_leader = form.team_leader.data
-                    job.job = form.job_title.data
-                    job.work_size = form.work_size.data
-                    job.collaborators = form.collaborators.data
-                    if form.remember_me.data:
-                        job.is_finished = 1
-                    else:
-                        job.is_finished = 0
-                    session.commit()
-                    return redirect('/')
-    return render_template('/editjob.html', form=form)
+            dep = Departments()
+            dep.title = form.title.data
+            dep.chief = form.chief.data
+            dep.members = form.members.data
+            dep.email = form.email.data
+            session.add(dep)
+            session.commit()
+            return redirect('/department')
+    return render_template('adddepart.html', form=form)
 
 
 @app.route('/')
@@ -160,6 +203,28 @@ def login():
                 new.append(d)
                 vse.clear()
     return render_template('osn.html', param=new)
+
+
+@app.route('/department')
+def department():
+    db_session.global_init("db/mars_explorer.sqlite")
+    session = db_session.create_session()
+    vse = list()
+    new = list()
+    for dep in session.query(Departments).all():
+        title = dep.title
+        chief = dep.chief
+        members = dep.members
+        email = dep.email
+        vse.append(title)
+        vse.append(chief)
+        vse.append(members)
+        vse.append(email)
+        vse.append(dep.id)
+        d = vse.copy()
+        new.append(d)
+        vse.clear()
+    return render_template('departament.html', param=new)
 
 
 @app.route('/register', methods=['GET', 'POST'])
